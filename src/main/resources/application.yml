@@ -1,0 +1,16 @@
+spring:
+  main:
+    allow-circular-references: true
+  database:
+    driverClassName: org.postgresql.Driver
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/stores
+    username: postgres
+    password: 12345Qwe
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+      dialect: org.hibernate.dialect.PostgreSQL1571Dialect

@@ -25,12 +25,15 @@ public class ElectroGoods {
 
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "id_typegoods")
-    private TypeElectronics typeGoods;
+    private TypeElectronics typeElectronics;
 
+    @Column(nullable = false)
     private Double price;
 
+    @Column(nullable = false)
     private Integer count;
 
+    @Column(nullable = false)
     private Boolean availability;
 
     private String description;

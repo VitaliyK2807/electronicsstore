@@ -25,7 +25,7 @@ public class Employees {
     private String surname;
 
     @Column(nullable = false, columnDefinition = "VARCHAR(100)")
-    private String name;
+    private String firstname;
 
     @Column(nullable = false, columnDefinition = "VARCHAR(100)")
     private String lastname;

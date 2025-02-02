@@ -23,7 +23,7 @@ public class TypeElectronics {
     @Column(nullable = false, columnDefinition = "VARCHAR(150)")
     private String name;
 
-    @OneToMany(mappedBy = "typeGoods")
+    @OneToMany(mappedBy = "typeElectronics")
     @ToString.Exclude
     @Builder.Default
     private List<ElectroGoods> electroGoods = new ArrayList<>();

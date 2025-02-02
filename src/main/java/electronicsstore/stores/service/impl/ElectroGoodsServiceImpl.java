@@ -40,12 +40,12 @@ public class ElectroGoodsServiceImpl implements ElectroGoodsService {
 
     @Override
     public ElectroGoods update(ElectroGoods goods) {
-        TypeElectronics typeElectronics = typeElectronicsService.findById(goods.getTypeGoods().getId());
+        TypeElectronics typeElectronics = typeElectronicsService.findById(goods.getTypeElectronics().getId());
         ElectroGoods existedGoods = findById(goods.getId());
 
         BeanUtils.copyNonNullProperties(goods, existedGoods);
 
-        existedGoods.setTypeGoods(typeElectronics);
+        existedGoods.setTypeElectronics(typeElectronics);
 
         return repository.save(existedGoods);
     }
